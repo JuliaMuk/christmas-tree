@@ -1,0 +1,104 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  min-height: 100%;
+}
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tree {
+  width: 100%;
+}
+.tree_wrapper {
+  position: relative;
+  width: 400px;
+}
+.ball {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: gold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  border: 5px solid goldenrod;
+  position: absolute;
+  font-size: 20px;
+  transform-style: preserve-3d;
+  transform: scale(0.4) rotateX(180deg);
+  transition: 1s;
+}
+
+.ball::after {
+  content: "Поздравления от ...";
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle farthest-side at 32% 22%, rgba(255, 0, 0, 1) 0%, rgba(118, 0, 0, 1) 88.8%);
+  transform: rotateX(180deg);
+  backface-visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+/*----здесь стили ваших шаров------*/
+
+.ball1 {
+  top: 150px;
+  left: 50px;
+  background-color: gold;
+}
+
+.ball2 {
+  top: 100px;
+  left: 150px;
+  background-color: gold;
+}
+
+.ball3 {
+  top: 10px;
+  left: 100px;
+  background-color: gold;
+  
+}
+
+.ball2::after {
+  background: url(../img/fon1.avif) no-repeat;
+}
+
+.ball3::after {
+  background: deeppink;
+
+}
+
+/*-------------------------------------------*/
+
+.zoom {
+  top: 30%;
+  left: 27%;
+  transform: scale(1) rotateX(180deg);
+  z-index: 100;
+}
+
+.show {
+  transform: scale(1) rotateX(0);
+}
