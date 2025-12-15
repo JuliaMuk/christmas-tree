@@ -25,8 +25,8 @@ html {
   width: 400px;
 }
 .ball {
-  width: 180px;
-  height: 180px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   background-color: gold;
   display: flex;
@@ -37,9 +37,9 @@ html {
   text-align: center;
   border: 5px solid goldenrod;
   position: absolute;
-  font-size: 20px;
+  font-size: 28px;
   transform-style: preserve-3d;
-  transform: scale(0.4) rotateX(180deg);
+  transform: scale(0.2) rotateX(180deg);
   transition: 1s;
 }
 
@@ -51,8 +51,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 50%;
-  background: radial-gradient(circle farthest-side at 32% 22%, rgba(255, 0, 0, 1) 0%, rgba(118, 0, 0, 1) 88.8%);
+  border-radius: 50%; 
   transform: rotateX(180deg);
   backface-visibility: hidden;
   justify-content: center;
@@ -80,7 +79,9 @@ html {
   background-color: gold;
   
 }
-
+.ball1::after{
+  background: radial-gradient(circle farthest-side at 32% 22%, rgba(255, 0, 0, 1) 0%, rgba(118, 0, 0, 1) 88.8%);
+}
 .ball2::after {
   background: url(../img/fon1.avif) no-repeat;
 }
@@ -93,8 +94,8 @@ html {
 /*-------------------------------------------*/
 
 .zoom {
-  top: 30%;
-  left: 27%;
+  top: 5%;
+  left: 17%;
   transform: scale(1) rotateX(180deg);
   z-index: 100;
 }

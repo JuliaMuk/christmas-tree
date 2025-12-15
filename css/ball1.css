@@ -1,0 +1,10 @@
+.ball1 {
+    top: 150px;
+    left: 50px;
+    background-color: gold;
+}
+
+.ball1::after {
+    content: "Поздравления от ...";
+    background: radial-gradient(circle farthest-side at 32% 22%, rgba(255, 0, 0, 1) 0%, rgba(118, 0, 0, 1) 88.8%);
+}

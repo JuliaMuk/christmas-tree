@@ -6,7 +6,7 @@ balls.forEach((ball)=>{
         ball.classList.add("zoom")
         setTimeout(()=>{
             ball.classList.add("show")
-        }, 3000)
+        }, 2000)
     })    
 })
 
