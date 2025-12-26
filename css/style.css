@@ -16,6 +16,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url(../img/fon.gif) center;
+  min-width: 400px;
 }
 .tree {
   width: 100%;
@@ -61,36 +63,356 @@ html {
 }
 /*----здесь стили ваших шаров------*/
 
-.ball1 {
-  top: 150px;
-  left: 50px;
-  background-color: gold;
+.ball28 {
+    top: 150px;
+    left: 50px;
+    background-color: #2db95e;
 }
 
-.ball2 {
-  top: 100px;
-  left: 150px;
-  background-color: gold;
+.ball28::after {
+    content: "Поздравления от Никитоса Абрикоса, Игната, Чокобоя";
+    background: linear-gradient(90deg, #1fe0a0 26%, #1fc749 53%);
+}
+.ball25 {
+    top: 250px;
+    left: 150px;
+    background-color: #bfece2;
+    
 }
 
+.ball25::after {
+    content: "Поздравления от Дашули♡";
+    background: radial-gradient(#357e75 22%, #ffffff 100%);
+    color: #ffffff;
+}
+.ball30 {
+    top: 260px;
+    left: 20px;
+    background-color: rgba(255, 217, 0, 0.411);
+}
+
+.ball30::after {
+    content: "Поздравления от Фёдорова Владислава";
+    background: radial-gradient(#7ba2c6 61%, #8c00ff 80%);
+}
+.ball24 {
+    top: 300px;
+    left: 70px;
+    background: radial-gradient(#F2EDEB 0%, #04D9D9 33%, #04C4D9 66%, #049DBF 100%);
+    border: 13px groove #0378A6;
+}
+
+.ball24::after {
+    content: "Поздравления от Настюшк ^^";
+    background: radial-gradient(#f0f3bd 0%, #02c39a 25%, #00a896 50%, #028090 75%, #05668d 100%);
+    
+}
+.ball5 {
+    top: 90px;
+    left: 130px;
+    background: radial-gradient(#ff7070 0%, #ff2600 100%);
+    border-color: red;
+}
+
+.ball5::after {
+    content: "Поздравления от Лисиной Насти";
+    background: radial-gradient(#ff7070 0%, #ff2600 100%);
+    border-color: red;
+}
+.ball23 {
+    top: 0px;
+    left: 60px;
+    background: radial-gradient(#ffbb00 0%, #a87e0b 47%, #846510 100%);
+    font-family: "Caveat", cursive;
+}
+
+.ball23::after {
+    font-family: "Rubik Gemstones", system-ui;
+    content: "Поздравления от Златы";
+    background: radial-gradient(#ff0000 0%, #aa0808 47%, #040274 100%);
+    color: goldenrod;
+}
+.ball18 {
+    top: 380px;
+    left: -50px;
+    background: radial-gradient(#bb00ff 0%, #0586ff 48%, #1f04ec 100%, #c800ff 100%);
+}
+
+.ball18::after {
+    content: "Поздравление Гуляеву Павлу!";
+    background: radial-gradient(circle farthest-side at 32% 22%,#1f04ec 31%, #bb00ff 54%, #0586ff 65%, #c800ff 100%);
+}
+
+.ball18 img{
+    width: 115px;
+    height: 115px;
+    border-radius: 70px;
+    
+
+}
+.ball18 button{
+    background-color: darkcyan;
+    border-radius: 15px;
+    border-color: brown;
+}
+
+.ball18 p{
+    color: brown;
+    font-size: 25px;
+}
+.ball16 {
+    top: 390px;
+    left: 210px;
+    background: radial-gradient(circle farthest-side at 32% 22%, rgb(9, 219, 20) 0%, rgb(175, 6, 209) 88.8%)
+}
+
+.ball16::after {
+    content: "Поздравления от дыни";
+    background: radial-gradient(circle farthest-side at 32% 22%, rgb(8, 199, 233) 0%, rgb(186, 4, 223) 88.8%);
+}
+
+.ball16 button{
+    background: radial-gradient(circle farthest-side at 32% 22%, rgb(204, 13, 13) 0%, rgb(186, 4, 223) 88.8%);;
+}
+.ball29 {
+    top: 160px;
+    left: 150px;
+    background-color: rgb(153, 240, 240);
+}
+
+.ball29::after {
+    content: "Поздравления от Иришки";
+    background:radial-gradient(#4296f0 12%, #3e8ada 29%, #d8eef8 42%, #5abdbf 49%, #4da3ff 59%, #ffffff 69%);
+}
 .ball3 {
-  top: 10px;
-  left: 100px;
-  background-color: gold;
-  
-}
-.ball1::after{
-  background: radial-gradient(circle farthest-side at 32% 22%, rgba(255, 0, 0, 1) 0%, rgba(118, 0, 0, 1) 88.8%);
-}
-.ball2::after {
-  background: url(../img/fon1.avif) no-repeat;
+    top: 230px;
+    left: 75px;
+    background: url(../img/danil.jpg);
+    color: rgb(194, 3, 3);
+    background-color: cover;
 }
 
 .ball3::after {
-  background: deeppink;
-
+    content: "Поздравления от якороль";
+    background: url(../img/nikita1.jpg);
+    color: rgb(30, 255, 0);
+    background-color: cover;
+}
+.ball1 {
+    top: 400px;
+    left: 90px;
+    background: radial-gradient(#f00000 0%, #e8d4d4 84%);
 }
 
+.ball1::after {
+    content: "Поздравления от Якупова Егора";
+    background: linear-gradient(0deg, #00c23a 0%, #f00000 84%);
+}   
+.ball1 p {
+    font-size: 13px;
+}
+.ball4 {
+    top: 320px;
+    left: 160px;
+    background: url(../img/piv.jpg);
+    background-size: cover;
+}
+
+.ball4::after {
+    content: "кто нажал тот программист черт возьми йоу хоуми";
+    background: url(../img/grysha.jpg);
+    background-size: cover;
+}
+
+.ball21 {
+    top: 330px;
+    left: 10px;
+    background: #ffffff url(../img/igiveyoumyheart.jpg) center center/cover no-repeat;
+    font-family: "Lavishly Yours", cursive;
+    font-size: large;
+    -webkit-text-stroke: 1px orange;
+}
+
+.ball21::after {
+    content: "Поздравления от Мишау";
+    font-family: "Lavishly Yours", cursive;
+    background: #ffffff url(../img/marycristmas.jpg) center center/cover no-repeat;
+}
+.ball12 {
+    top: 70px;
+    left: 10px;
+    background: url('../img/nikita-1.jpg');
+    color: red;
+    background-size: cover;
+}
+
+.ball12::after {
+    content: "Никита С новым годом";
+    background: url('../img/nikita-2.jpg');
+    color: red;
+    background-size: cover;
+}
+.ball9 {
+    top: 90px;
+    left: 70px;
+    background: radial-gradient(#ff0000 35%, #ffffff 86%);
+    color: #ffffff;
+    border: none;
+    font-size: 25px;
+    box-shadow: 5px 5px 10px 1px #ffffff;
+}
+
+.ball9::after {
+    content: "Поздравление от Семагина Максима";
+    background: radial-gradient(#001eff 21%, #ffffff 100%);
+    color: #ffffff;    
+    box-shadow: 5px 5px 10px 1px #ffffff;
+} 
+.ball15 {
+    top: 160px;
+    left: -30px;
+    background:url(../img/images.jpg);
+}
+
+.ball15::after {
+    content: "Поздравления от Ниязова Тимура";
+    background: radial-gradient(circle farthest-side at 32% 22%, rgb(0, 68, 255) 0%, rgb(110, 207, 202) 88.8%);
+    
+}
+.ball15 p {
+    font-size: 15px;
+}  
+.ball19 {
+    top: 270px;
+    left: -50px;
+    background: url(../img/835864270.gif) no-repeat;
+    background-size: cover;
+}
+
+.ball19::after {
+    content: "Поздравления от Гуляева Паши";
+   background: url(../img/5815163.gif) no-repeat;
+   background-size: cover;
+}
+
+.ball19 button {
+  background: radial-gradient(#f0edf7 6%, #8f89e1 98%);
+  border-radius: 40px;
+}
+
+.ball19 p {
+    color: rgb(78, 241, 78);
+    font-size: 20px;
+}
+.ball2 {
+    top: 280px;
+    right: -60px;
+    background-color: rgb(92, 18, 228);
+}
+.ball2 .btn-close:hover {
+    background-color: rgb(156, 17, 221);
+}
+
+.ball2::after {
+    content: "Поздравления от Гилева Владислава";
+    background: linear-gradient(0deg, #00b3ff 2%, #000 95%, #ffffff 100%);;
+}
+.ball2 p {
+    font-size: 13px;
+}
+.ball22 {
+    top: 420px;
+    left: 20px;
+    color: white;
+    background: linear-gradient(30deg, #ff0000 0%, #b30000 24%, #330000 53%, #990000 83%, #ff0000 100%);
+    border: 5px solid rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+.ball22::after {
+    content: "Поздравление от Женьки";
+    font-weight: bold;
+    background: url(../img/c2ae20b997fa11eebef2feda328ae3aa_upscaled.jpg) no-repeat;
+    background-size: cover;
+    color: rgb(212, 209, 0);
+}
+.ball22 img{
+    width: 115px;
+    height: 115px;
+    border-radius: 70px;
+}
+.ball10 {
+    top: 420px;
+    left: 150px;
+    background: url(../img/yf.jpg);
+    background-size: cover ;
+    color: azure;
+}
+
+.ball10::after {
+    content: "Поздравления от Глеба Синицына";
+    background: url(../img/kvnsndmrt7233pkxj3jdup2tcgl2bypc.webp);
+    background-size: cover ;
+    color: azure;
+}
+.ball6 {
+    top: 30px;
+    left: 110px;
+    background: #ffffff url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRfTycp1q1gTyJDz__0g4M_aisQx5r6pfZVg&s) center center/cover no-repeat;
+}
+
+.ball6::after {
+    content: "Поздравления от Окунева Константина!";
+    background: #ffffff url(https://i.pinimg.com/736x/a2/aa/4f/a2aa4f06ba328380b19d5670b06a07d6.jpg) center center/cover no-repeat;
+}
+.ball13 {
+    top: 175px;
+    left: 100px;
+    color: aliceblue;
+    background:url(../img/c14ec5e25ad2c52793396f7162da0325.jpg);
+    background-size: cover;
+}
+
+.ball13::after {
+    content: "С Новым Годом!";
+    color: aliceblue;
+    background:url(../img/c14ec5e25ad2c52793396f7162da0325.jpg);
+    background-size: cover;
+}
+.ball20 {
+    top: 350px;
+    left: 110px;
+    font-size: 20px;
+    color: white;
+    background: url(../img/happy_new_year.jpg);
+    background-position-x: 48%;
+    background-size: cover;
+    border: solid 5px gold;
+}
+
+.ball20::after {
+    content: "Куплиновый год";
+    font-size: 30px;
+    color: blue;
+    background: url(../img/icon.png);
+    background-size: cover;
+}
+.ball27 {
+    top: 200px;
+    left: 15px;
+    background: url(../img/WinterTree.jpg);
+    background-size: 130%;
+    font-size: 130%;
+    color: rgb(243, 242, 243);
+    border: 5px blueviolet solid;
+}
+
+.ball27::after {
+    content: "Поздравления от Морозовского Павла";
+    background: url(../img/WindowSnow.jpg);
+    background-size: 100%;
+    background-position: 0px -30px;
+}
 /*-------------------------------------------*/
 
 .zoom {

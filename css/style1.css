@@ -1,0 +1,251 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  min-height: 100%;
+}
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img1/fon.gif)  center;
+}
+.tree {
+  width: 100%;
+}
+.tree_wrapper {
+  position: relative;
+  width: 400px;
+}
+.ball {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: gold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  border: 5px solid goldenrod;
+  position: absolute;
+  font-size: 32px;
+  transform-style: preserve-3d;
+  transform: scale(0.2) rotateX(180deg);
+  transition: 1s;
+}
+
+.ball::after {
+  content: "Поздравления от ...";
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; 
+  transform: rotateX(180deg);
+  backface-visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+/*----здесь стили ваших шаров------*/
+
+.ball13 {
+  top: 150px;
+  left: 50px;
+  background-color: #8a0012;
+  color: aliceblue;
+  border: solid 5px #4d000a;
+}
+
+.ball13::after {
+  content: "Хэппи Нью Ер!";
+  background-image:url(../img1/161687938713598572.gif);
+}
+
+.ball13 .btn-close {
+  background-color: black;
+  color: aliceblue;
+  padding: 6px 20px;
+  border: 2px dotted rgb(255, 255, 255);
+  border-radius: 16px;
+}
+
+.ball13 .btn-close:hover {
+  background-color: rgb(255, 255, 255);
+  color:  #8a0012;
+}
+
+.ball13 .text {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.ball7 {
+  top: 250px;
+  left: 150px;
+  background: radial-gradient(circle farthest-side at 32% 22%, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 88.8%);
+  border: none;
+}
+
+.ball7::after {
+  content: "Поздравления никому, а всем";
+  color: rgb(255, 255, 255);
+  /* background: radial-gradient(circle farthest-side at 32% 22%, rgb(247, 0, 255) 0%, rgb(56, 15, 240) 88.8%); */
+  background: url(../img1/b13d029bd4323756ef2d24235fffe819d_w200.webp) no-repeat;
+  background-size: cover;
+}
+
+.ball7 img {
+  border-radius: 15%;
+  margin: 12px;
+}
+
+.ball7 .btn-close {
+  border-radius: 5%;
+  border: none;
+  background: rgb(189, 16, 151);
+}
+
+.ball5 {
+  top: 50px;
+  left: 100px;
+  background-color: gold;
+}
+
+.ball5
+{
+  background: url(../img1/новый\ год.jpg);
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.ball5 p {
+  color: darkgreen;
+  -webkit-text-stroke: 0.5px antiquewhite;
+
+}
+
+.ball5 .btn-close {
+  background-color: darkgreen;
+  color: antiquewhite;
+}
+
+.ball5::after {
+  content: "- Подождите, а что это у вас на носу?"; 
+  background: radial-gradient(circle farthest-side at 32% 22%, rgba(255, 0, 0, 1)0%, rgba(118, 0, 0, 1) 88.8%);
+}
+
+.ball8 {
+  top: 320px;
+  left: 60px;
+  background-color: rgba(175, 28, 28, 0.616);
+}
+
+
+.ball8::after {
+  content: "Альпинисты - они как яйца.";
+  background: radial-gradient(circle farthest-side at 32% 22%, rgb(144, 0, 163) 0%, rgba(118, 0, 0, 1) 88.8%);
+}
+
+.ball8 .btn-close {
+  background: none;
+  border-radius: 30px;
+  font-size: 20px;
+}
+.ball8 .btn-close:hover{
+  opacity: 70%;
+}
+
+.ball4 {
+  top: 340px;
+  left: 200px;
+  background-color: rgb(255, 248, 145);
+border: 5px solid rgb(255, 197, 73);
+}
+
+.ball4::after {
+  content: "Поздравления для всех котят!!!";
+  color: rgb(173, 104, 0);
+  background: radial-gradient(circle farthest-side at 32% 22%, rgb(255, 231, 154) 0%, rgb(255, 192, 75) 88.8%)
+}
+
+
+.ball4 {
+background: url("../img1/giphy\ \(3\).gif") no-repeat;
+}
+
+.ball4 p {
+  color: rgb(255, 244, 142);
+  font-weight: bold;
+}
+.ball4 button {
+border: 0;
+background-color: transparent;
+margin: 5px;
+}
+
+.ball4 button p {
+  font-weight: bold;
+  color: rgb(255, 228, 153);
+}
+.ball11 {
+    top: 230px;
+    left: 0px;
+    background: url(../img1/photo_5334567325912469564_x.jpg);
+    background-position: center;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+border: none;
+}
+
+.ball11 .text {
+    margin-top: 50px;
+    margin-right: 10px;
+    font-size: 22px;
+    transform: rotate(-2deg);
+}
+
+.ball11::after {
+    content: "Поздравление от Яны^^";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: azure;
+    border: n;
+   background: url(../img1/photo_5334567325912469541_x.jpg);
+    background-position: center;
+}
+
+.ball11 .btn-close {
+    background-color: white;
+    color: brown;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 10px;
+}
+/*-------------------------------------------*/
+
+.zoom {
+  top: 5%;
+  left: 17%;
+  transform: scale(1) rotateX(180deg);
+  z-index: 100;
+}
+
+.show {
+  transform: scale(1) rotateX(0);
+}
